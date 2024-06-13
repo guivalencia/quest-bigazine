@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+  height: 300px;
+}
+.wrapper{
+  width: 400px;
+  margin-bottom: 20px;
+  margin-left: 20PX;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.wrapper .title{
+  color: #fff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+  height: 100px;
+  text-align: center;
+  background: #05a2fd;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .box{
+  padding: 10px 30px;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+}
+.wrapper .box label{
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4,
+#option-5:checked ~ .option-5,
+#option-6:checked ~ .option-6,
+#option-7:checked ~ .option-7,
+#option-8:checked ~ .option-8,
+#option-9:checked ~ .option-9,
+#option-10:checked ~ .option-10,
+#option-11:checked ~ .option-11,
+#option-12:checked ~ .option-12,
+#option-13:checked ~ .option-13,
+#option-14:checked ~ .option-14,
+#option-15:checked ~ .option-15,
+#option-16:checked ~ .option-16,
+#option-17:checked ~ .option-17,
+#option-18:checked ~ .option-18,
+#option-19:checked ~ .option-19,
+#option-20:checked ~ .option-20,
+#option-21:checked ~ .option-21,
+#option-22:checked ~ .option-22,
+#option-23:checked ~ .option-23,
+#option-24:checked ~ .option-24,
+#option-25:checked ~ .option-25,
+#option-26:checked ~ .option-26,
+#option-27:checked ~ .option-27{
+  background: #05a2fd;
+  border-color: #05a2fd;
+}
+
+.wrapper .box label .dot{
+  height: 20px;
+  width: 20px;
+  background: #ffbb00;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.wrapper .box label .icon{
+  margin-right: 10px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot,
+#option-5:checked ~ .option-5 .dot,
+#option-6:checked ~ .option-6 .dot,
+#option-7:checked ~ .option-7 .dot,
+#option-8:checked ~ .option-8 .dot,
+#option-9:checked ~ .option-9 .dot,
+#option-10:checked ~ .option-10 .dot,
+#option-11:checked ~ .option-11 .dot,
+#option-12:checked ~ .option-12 .dot,
+#option-13:checked ~ .option-13 .dot,
+#option-14:checked ~ .option-14 .dot,
+#option-15:checked ~ .option-15 .dot,
+#option-16:checked ~ .option-16 .dot,
+#option-17:checked ~ .option-17 .dot,
+#option-18:checked ~ .option-18 .dot,
+#option-19:checked ~ .option-19 .dot,
+#option-20:checked ~ .option-20 .dot,
+#option-21:checked ~ .option-21 .dot,
+#option-22:checked ~ .option-22 .dot,
+#option-23:checked ~ .option-23 .dot,
+#option-24:checked ~ .option-24 .dot,
+#option-25:checked ~ .option-25 .dot,
+#option-26:checked ~ .option-26 .dot
+#option-27:checked ~ .option-27 .dot{
+  background: #fff;
+}
+
+.box label .dot::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+/* #option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before,
+#option-5:checked ~ .option-5 .dot::before,
+#option-6:checked ~ .option-6 .dot::before,
+#option-7:checked ~ .option-7 .dot::before,
+#option-8:checked ~ .option-8 .dot::before,
+#option-9:checked ~ .option-9 .dot::before,
+#option-10:checked ~ .option-10 .dot::before,
+#option-11:checked ~ .option-11 .dot::before,
+#option-12:checked ~ .option-12 .dot::before,
+#option-13:checked ~ .option-13 .dot::before,
+#option-14:checked ~ .option-14 .dot::before,
+#option-15:checked ~ .option-15 .dot::before,
+#option-16:checked ~ .option-16 .dot::before,
+#option-17:checked ~ .option-17 .dot::before,
+#option-18:checked ~ .option-18 .dot::before,
+#option-19:checked ~ .option-19 .dot::before,
+#option-20:checked ~ .option-20 .dot::before{
+  background: #ffbb00; */
+  /* transform: translate(-50%, -50%) scale(1);
+} */
+
+.wrapper .box label .text{
+  color: #ffbb00;
+  font-size: 24px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text,
+#option-5:checked ~ .option-5 .text,
+#option-6:checked ~ .option-6 .text,
+#option-7:checked ~ .option-7 .text,
+#option-8:checked ~ .option-8 .text,
+#option-9:checked ~ .option-9 .text,
+#option-10:checked ~ .option-10 .text,
+#option-11:checked ~ .option-11 .text,
+#option-12:checked ~ .option-12 .text,
+#option-13:checked ~ .option-13 .text,
+#option-14:checked ~ .option-14 .text,
+#option-15:checked ~ .option-15 .text,
+#option-16:checked ~ .option-16 .text,
+#option-17:checked ~ .option-17 .text,
+#option-18:checked ~ .option-18 .text,
+#option-19:checked ~ .option-19 .text,
+#option-20:checked ~ .option-20 .text,
+#option-21:checked ~ .option-21 .text,
+#option-22:checked ~ .option-22 .text,
+#option-23:checked ~ .option-23 .text,
+#option-24:checked ~ .option-24 .text,
+#option-25:checked ~ .option-25 .text,
+#option-26:checked ~ .option-26 .text,
+#option-27:checked ~ .option-27 .text{
+  color: #fff;
+}
+
+.wrapper .box input[type="radio"]{
+  display: none;
+  position: relative;
+  z-index: -1;
+}
+
+@media only screen and (min-device-width:280px) and (max-device-width:960px) {
+
+.wrapper{
+  width: 800px;
+  margin-bottom: 20px;
+  margin-left: 20PX;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+}
